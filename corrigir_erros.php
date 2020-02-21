@@ -31,6 +31,7 @@ echo '<h2>These files had UTF8 BOM, but i cleaned them:</h2><p class="FOUND">';
 foreach ($BOMBED as $utf) { echo $utf ."<br />\n"; }
 echo '</p>';
 
+
 // Recursive finder
 function RecursiveFolder($sHOME) {
   global $BOMBED, $WIN;
