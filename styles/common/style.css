@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body {
+	margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/* global styles */
+.data{
+    color: #525252;
+}
+
+
+/*display data interfaces */
+#interface-display{
+    width: 95%;
+    margin: 60px auto;
+    color: #ffa200;
+}
+#interface #container{
+
+}
+#interface-display #subject-text{
+
+}
+#interface-display #data-text{
+    color: rgb(64, 64, 64);
+}
+
+/*form interfaces*/
+#interface-form{
+
+}
+/***************/
+#interface-form{
+    width: 550px;
+    margin: 30px auto;
+}
+#interface-form #header-text{
+    text-align: center;
+    font-size: 40px;
+}
+#interface-form #header-text hr{
+    width: 70%;
+    border: 1px solid #595959;
+}
+#interface-form #input-container #input-name label{
+    font-size: 23px;
+    color: #595959;
+}
+#interface-form input, #interface-form select, #interface-table input, #interface-form textarea{
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #595959;
+    padding: 0 20px;
+	margin-bottom: 5px;
+	resize: none;
+}
+
+#interface-form #input-container input:focus, #interface-form select:focus, #interface-table input:focus, #interface-form textarea:focus{
+    outline: 1px solid #404040;
+}
+#interface-form textarea{
+    padding-top: 10px;
+}
+#interface-form input[type=submit]:hover, #interface-form button[type=button]:hover{
+     background-color: #404040;
+ }
+#interface-form input[type=submit], #interface-form button[type=button]{
+    width: 100%;
+    height: 40px;
+    background-color: #595959;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#interface-form button[type=button].red:hover, #menu li a.red:hover{
+     background-color: #842e1d;
+ }
+#interface-form button[type=button].red, #menu li a.red{
+    background-color: #a93d2e;
+}
+#interface-form button[type=button].black:hover, #menu li a.black:hover{
+     background-color: #000000;
+ }
+#interface-form button[type=button].black, #menu li a.black{
+    background-color: #0d0d0d;
+}
+
+
+
+#interface-form input[type=submit]{
+    margin-top: 40px;
+}
+#interface-form fieldset{
+    border: 2px solid rgba(255, 165, 0, 0.35);
+    padding: 20px 20px;
+}
+/**/
+
+
+
+
+/* table interfaces */
+#interface-table{
+    margin: 40px auto;
+    width: 95%;
+}
+#interface-table .search{
+    width: 30%;
+}
+#interface-table .btn{
+    height: 40px;
+    background-color: #595959;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#interface-table table{
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+#interface-table th, #interface-table td, #interface-table tr{
+    border: 1px solid #595959;
+}
+#interface-table th, #interface-table td{
+    padding: 15px 10px;
+    text-align: center;
+}
+#interface-table tbody tr:nth-child(odd){
+    background-color: rgba(255, 165, 0, 0.35);
+}
+#interface-table td:last-child{
+    text-align: center;
+}
+#interface-table tr td a{
+    text-decoration: none;
+    color: rgb(64, 64, 64);
+}
+
+/* general interface */
+#interface{
+    width: 95%;
+    margin: 60px auto;/*110px auto;*/
+}
+#interface .btn{
+    height: 40px;
+    background-color: #ffa200;
+    color: white;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#interface .important{
+    display: block;
+    font-size: 30px;
+}
+
+#interface #input-container{
+    margin-top: 17px;
+}
+
+
+
+/* menu */
+#menu ul{
+    background-color: #595959;;
+    list-style-type: none;
+    margin: 0;
+	margin-top: 0;
+    padding: 0;
+}
+#menu ul li{
+    display: inline;
+}
+#menu ul li a:hover{
+    background-color: #404040;
+}
+#menu ul li a{
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 15px 40px;
+    background-color: #595959;
+}
+
+
+/*individual styles*/
+.yellow-color{
+    color: yellow;
+}
+.red-color{
+    text-align: center;
+    font-weight: bold;
+    color: #ff0800;
+}
+
+.selected{
+    background-color: #404040;
+}
+
+.right{
+    float: right;
+}
+
+
+/* icons - fontsawsome */
+.icon-hover:hover{
+    cursor: pointer;
+}
+
+/* geral */
+.mb-30{
+    margin-bottom: 30px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+
+/* imagem do login*/
+#image {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#login {
+    max-width: 95%;
+    margin-left: auto;
+}
+
+/* outras resolucoes */
+
+@media screen and (max-width: 590px){
+    #interface-form{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #interface-table .btn{
+        width: 100%;
+        margin: 1px auto;
+    }
+}
+
+@media screen and (max-width: 1235px){
+    #interface-table table{
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+    }
+    #interface-table .search{
+        float: left;
+        display: block;
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    #menu ul{
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    #menu ul li a.right{
+        float: none;
+    }
+    #menu ul li a.red{
+        margin-left: 40px;
+    }
+
+
+}
+@media screen and (max-width: 1900px){
+    #interface-table table{
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+.select-login{
+	display: flex;
+	margin: 10% auto;
+	height: 250px;
+	width: 60%;
+}
+.customer-login{
+	margin-right: 10%;
+}
+.admin-login{
+	margin: 0 0; 
+}
+.select-login a{
+	background-color: #595959;
+	color: white;
+	text-align: center;
+	width: 45%; 
+	text-decoration: none;
+	font-size: 30px;
+	padding: 40px 0;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+.select-login b{
+	margin-top: 25px;
+	display: block;
+}
+
+.back{
+	color: #595959;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.back i{
+	width: 100%;
+	text-align: center;
+	margin: 10px auto;
+	margin-bottom: 5px;
+}
+
+.login-title{
+	font-size: 30px;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+}

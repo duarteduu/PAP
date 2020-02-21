@@ -1,0 +1,2 @@
+[10-Oct-2019 09:57:13 Europe/London] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'onortene'@'cp4.maskcloud.net' (using password: YES) in /home/onortene/encomendas.cronograma.pt/gestao/backend/conn.php on line 11
+[10-Oct-2019 09:57:15 Europe/London] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'onortene'@'cp4.maskcloud.net' (using password: YES) in /home/onortene/encomendas.cronograma.pt/gestao/backend/conn.php on line 11
